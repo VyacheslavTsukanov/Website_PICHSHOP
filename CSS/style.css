@@ -148,5 +148,116 @@ body {
 }
 
 @media(max-width: 992px) {
-   
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+
+    .header-logo p {
+        font-size: 100px;
+    }
+
+    .header-menu {
+        margin-top: 60px;
+    }
+
+        .header-menu a {
+            font-size: 100px;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+
+    /* ___________________________ */
+
+    .container_1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .con1 p {
+        font-size: 50px;
+    }
+
+    .item-1 p {
+        font-size: 100px;
+    }
+
+    .item-1 b {
+        font-size: 90px;
+        color: red;
+    }
+
+    .item p {
+        padding: 40px;
+        font-size: 20px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .con1 img {
+        width: 100%;
+    }
+
+    .item-1 img {
+        width: 100%;
+    }
+
+    .item-1 {
+        flex-grow: 4;
+    }
+
+    .item-2 {
+        flex-basis: 30%;
+    }
+
+    .item-3 {
+        flex-basis: 30%;
+    }
+
+    /* ___________________________ */
+
+    .container_2 {
+        padding-bottom: 20px;
+    }
+
+    .itemMini {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .item {
+        padding: 10px;
+        font-size: 25px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .con2 img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .con2 p {
+        font-size: 100px;
+    }
+
+    .item-1 {
+        flex-grow: 1;
+        flex-basis: 90%;
+    }
+
+    .item-4 {
+        flex-grow: 1;
+        flex-basis: 90%;
+    }
+
+
+    /* _______________________ */
 }
