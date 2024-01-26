@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/style.css">
+		<title>Практическая работа № 3</title>
+	</head>
+
+	<body>
+	<main class="container">
+		<section>
+			<p class="box-text-b">Привет! Добро пожаловать на страницу о языке программирования JavaScript!</p>
+			<p class="box-text-p">
+				JavaScript (или просто JS) - это один из самых популярных языков программирования в мире. Он используется для создания интерактивных веб-сайтов, игр, мобильных приложений и многое другое. Если вы хотите стать веб-разработчиком или просто узнать больше о программировании, изучение JavaScript - отличное место для начала.
+				Зачем нужен JavaScript? Этот язык позволяет делать ваши веб-сайты более интересными и функциональными. Вы можете создавать анимации, обрабатывать формы, обновлять содержимое страницы без перезагрузки и многое другое.
+				JavaScript также позволяет вам создавать веб-приложения, которые могут работать как на компьютере, так и на мобильных устройствах. Это делает его очень мощным инструментом для разработки.
+				Итак, изучение JavaScript - отличный способ начать свой путь в программировании. Надеемся, что эта информация поможет вам понять, зачем он нужен, и какие возможности он предоставляет. Удачи в изучении!
+			</p>
+		</section>
+
+		<section class="IT-sphere-box-cards">
+				<div class="sphere-cards">
+					
+					<div class="IT-sphere-card">
+						<h2>Переменные</h2>
+						<p>В JavaScript можно объявлять переменные с помощью ключевого слова var. Они могут содержать различные типы данных, такие как числа, строки, массивы и объекты.</p>
+						<br>
+						<div>
+							<p class="box-card-p">
+								var name = "John"; <br>
+								var age = 25;	<br>
+								var numbers = [1, 2, 3, 4, 5];	<br>
+								var person = {	<br>
+								name: "John",	<br>
+								age: 25	<br>
+								};
+							</p>
+						</div>
+					</div>
+
+					<div class="IT-sphere-card">
+							<h2>Условные операторы</h2>
+							<p>JavaScript предоставляет условные операторы, такие как if, else if и else, которые позволяют выполнить определенный блок кода в зависимости от условия.</p>
+							<br>
+							<div>
+								<p class="box-card-p">
+									var age = 18;	<br>
+									<br>
+									if (age < 18) {	<br>
+									console.log("Вы несовершеннолетний");	<br>
+									} else if (age >= 18 && age < 65) {	<br>
+									console.log("Вы взрослый");	<br>
+									} else {	<br>
+									console.log("Вы пенсионер");	<br>
+									}
+								</p>
+							</div>
+					</div>
+
+					<div class="IT-sphere-card">
+							<h2>Циклы</h2>
+							<p>Циклы позволяют повторять выполнение определенного блока кода до тех пор, пока условие истинно. В JavaScript доступны циклы for и while.</p>
+							<br>
+							<div>
+								<p class="box-card-p">	<br>
+									for (var i = 0; i < 5; i++) {	<br>
+										console.log(i);	<br>
+										}	<br>
+											<br>
+										var i = 0;	<br>
+										while (i < 5) {	<br>
+										console.log(i);	<br>
+										i++;	<br>
+										}
+								</p>
+							</div>
+					</div>
+
+					<div class="IT-sphere-card">
+							<h2>Функции</h2>
+							<p>Функции - это блоки кода, которые могут быть вызваны для выполнения определенных действий. Они позволяют вам организовывать код в более логические блоки и повторно использовать его.</p>
+							<br>
+							<div>
+								<p class="box-card-p">
+									function greet(name) {	<br>
+										console.log("Привет, " + name + "!");	<br>
+										}	<br>
+											<br>
+										greet("John");	<br>
+								</p>
+							</div>
+					</div>
+
+					<div class="IT-sphere-card">
+							<h2>Валидация формы</h2>
+							<p>JavaScript позволяет проверять данные, введенные пользователем в формах, и предотвращать отправку формы, если данные некорректны.</p>
+							<br>
+							<div>
+								<p class="box-card-p">
+									function validateForm() {	<br>
+										var name = document.forms["myForm"]["name"].value;	<br>
+										var email = document.forms["myForm"]["email"].value;	<br>
+											<br>
+										if (name == "" || email == "") {	<br>
+										alert("Заполните все поля");	<br>
+										return false;	<br>
+										}	<br>
+										}
+								</p>
+							</div>
+					</div>
+
+					<div class="IT-sphere-card">
+							<h2>Изменение содержимого страницы</h2>
+							<p>JavaScript позволяет изменять содержимое веб-страницы динамически без необходимости перезагрузки страницы.</p>
+							<br>
+							<div>
+								<p class="box-card-p">
+									function changeText() { <br>
+										var element = document.getElementById("myElement"); <br>
+										element.innerHTML = "Новый текст"; <br>
+									}
+								</p>
+							</div>
+					</div>
+
+					<div class="IT-sphere-card">
+							<h2>Взаимодействие с веб-сервером</h2>
+							<p>JavaScript позволяет отправлять запросы на веб-сервер и получать данные в формате JSON или XML с помощью технологии AJAX.</p>
+							<br>
+							<div>
+								<p class="box-card-p">
+									var xhttp = new XMLHttpRequest();	<br>
+									xhttp.onreadystatechange = function() {	<br>
+									if (this.readyState == 4 && this.status == 200) {	<br>
+									var data = JSON.parse(this.responseText);	<br>
+									console.log(data);	<br>
+									}	<br>
+									};	<br>
+									xhttp.open("GET", "https://api.example.com/data", true);	<br>
+									xhttp.send();
+								</p>
+							</div>
+					</div>
+
+					<div class="IT-sphere-card">
+							<h2>Анимация и визуализация</h2>
+							<p>JavaScript позволяет создавать анимацию и визуализацию на веб-странице с помощью библиотеки Canvas или SVG.</p>
+							<br>
+							<div>
+								<p class="box-card-p">
+									var canvas = document.getElementById("myCanvas");	<br>
+									var ctx = canvas.getContext("2d");	<br>
+									<br>
+									ctx.fillStyle = "red";	<br>
+									ctx.fillRect(10, 10, 50, 50);	<br>
+								</p>
+							</div>
+					</div>
+
+				</div>
+		
+		</section>
+
+		<section class="button">
+			<a class="button-link" href="Тест JavaScript/index.html">Тест JavaScript</a>
+			
+		</section>
+
+		<footer>
+			
+			<div class="foot">
+                <p>
+                        © 2023. All Rights Reserved. <br> Сайт сделал - Tsukanov Vaycheslav
+                </p>
+                <a href="https://github.com/VyacheslavTsukanov" target="_blank" title="Cсылка на GitHub">
+                    <img src="img/GitHub.png" alt="GitHub" width="50px">
+                </a>
+            </div>
+
+		</footer> 
+	</main>	
+	</body>
+</html>

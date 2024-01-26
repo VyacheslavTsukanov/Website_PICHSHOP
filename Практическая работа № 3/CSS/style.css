@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(34, 34, 29);
+  color: #fff;
+}
+
+main {
+  width: 1050px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: justify;
+ }
+
+ .box-text-b {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+ }
+
+ .box-text-p {
+  font-size: 20px;
+  margin-top: 30px;
+ }
+
+
+.IT-sphere-box-cards {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  color: #000;
+}
+
+.sphere-cards {
+  display: flex;
+  justify-content: space-around;
+ 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.IT-sphere-card {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(129, 118, 118, 0.5);
+  cursor: pointer;
+  border-radius: 5px;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  
+}
+
+.IT-sphere-card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.box-card-p {
+  text-align: left;
+}
+
+
+.button-link {
+  margin: auto;
+  width: 200px;
+  display: block;  
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button-link:hover {
+  background-color: #2ded27;
+  color: #fff;
+}
+
+/* -------------------- */
+
+
+footer {
+  padding: 30px;
+  text-align: center;
+  /* border: solid 2px red; */
+}
+
+.foot  {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.foot a {
+  padding-left: 10px;
+}
